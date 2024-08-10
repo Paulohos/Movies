@@ -25,6 +25,9 @@ public enum L10n {
                 public static let trailer = L10n.tr("Localizable", "movie.detail.trailer")
             }
         }
+
+        /// Movies
+        public static let launchTitle = L10n.tr("Localizable", "launchTitle")
     }
 }
 

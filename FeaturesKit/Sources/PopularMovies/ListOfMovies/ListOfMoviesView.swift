@@ -26,7 +26,9 @@ public struct ListOfMoviesView: View {
                 default:
                     VStack {
                         Text(Strings.popular.uppercased())
-                            .foregroundStyle(.white)
+                            .foregroundStyle(Color.secondaryApp)
+                            .shadow(color: Color.secondaryApp, radius: 2)
+                            .shadow(color: Color.secondaryApp, radius: 50)
                         ScrollView {
                             LazyVGrid(columns: columns) {
                                 ForEach(viewModel.response.results.indices, id: \.self) { index in
@@ -46,6 +48,10 @@ public struct ListOfMoviesView: View {
                                         }
                                     }
                                 }
+                            }
+                            if viewModel.state == .isPrefetching {
+                                LoadingView()
+                                    .frame(height: 45)
                             }
                         }
                     }

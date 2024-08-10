@@ -10,7 +10,6 @@ extension NetworkService {
     ///
     /// - Parameters:
     ///   - appConfiguration: AppConfiguration dependency
-    ///   - localStorageService: LocalStorageService dependency
     ///   - notifiersService: NotifiersService dependency
     /// - Returns: A live `NetworkService`
     public static func live(

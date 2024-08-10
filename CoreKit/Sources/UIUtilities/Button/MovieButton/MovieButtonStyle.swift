@@ -30,7 +30,6 @@ struct FilledButtonStyle: ButtonStyle {
                 ? style.titleTextHighlighted
                 : style.titleText
             )
-
     }
 }
 

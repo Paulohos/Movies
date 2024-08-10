@@ -12,7 +12,6 @@ extension NetworkService {
     ///     var networkServiceResponse: NetworkResponse!
     ///     var networkService = NetworkService.mock(
     ///         appConfiguration: appConfiguration,
-    ///         localStorageService: localStorageService,
     ///         mockValueProvider: { self.networkServiceResponse }
     ///     )
     ///
@@ -44,14 +43,12 @@ extension NetworkService {
     /// var mockValueQueue: [NetworkResponse] = [...]
     /// var networkService = NetworkService.mock(
     ///     appConfiguration: appConfiguration,
-    ///     localStorageService: localStorageService,
     ///        mockValueProvider: { mockValueQueue.removeFirst() }
     ///    )
     /// ```
     ///
     /// - Parameters:
     ///   - appConfiguration: AppConfiguration dependency
-    ///   - localStorageService: LocalStorageService dependency
     ///   - notifiersService: NotifiersService dependency
     ///   - mockValueProvider: A mechanism through which mock values can be passed to the network service.
     /// - Returns: A NetworkService mock object

@@ -9,12 +9,6 @@ public struct PopularMoviesResponse: Decodable {
         case totalPages = "total_pages"
     }
 
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.results = try container.decode([PopularMoviesList].self, forKey: .results)
-        self.totalPages = try container.decode(Int.self, forKey: .totalPages)
-    }
-
     init() {
         results = []
         totalPages = 0
@@ -72,22 +66,4 @@ struct PopularMoviesList: Decodable, Hashable {
         self.releaseDate = releaseDate
         self.video = video
     }
-
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decode(Int.self, forKey: .id)
-        self.adult = try container.decode(Bool.self, forKey: .adult)
-        self.backdropPath = try container.decodeIfPresent(String.self, forKey: .backdropPath)
-        self.originalIitle = try container.decode(String.self, forKey: .originalIitle)
-        self.voteAverage = try container.decode(Double.self, forKey: .voteAverage)
-        self.popularity = try container.decode(Double.self, forKey: .popularity)
-        self.posterPath = try container.decode(String.self, forKey: .posterPath)
-        self.overview = try container.decode(String.self, forKey: .overview)
-        self.title = try container.decode(String.self, forKey: .title)
-        self.originalLanguage = try container.decode(String.self, forKey: .originalLanguage)
-        self.voteCount = try container.decode(Int.self, forKey: .voteCount)
-        self.releaseDate = try container.decode(String.self, forKey: .releaseDate)
-        self.video = try container.decode(Bool.self, forKey: .video)
-    }
-
 }
