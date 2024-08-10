@@ -6,4 +6,7 @@ public extension Image {
 
     // Error
     static let popcornFill = Image(systemName: "popcorn.fill")
+
+    // Movie
+    static let playFill = Image(systemName: "play.fill")
 }

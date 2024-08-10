@@ -22,6 +22,8 @@
 		FA5F6CE72C67ACCD00D54F3D /* UIUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F6CE62C67ACCD00D54F3D /* UIUtilities */; };
 		FA5F6CE92C67ACCD00D54F3D /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F6CE82C67ACCD00D54F3D /* Utilities */; };
 		FA5F6CEB2C67ACEB00D54F3D /* loadingfile.json in Resources */ = {isa = PBXBuildFile; fileRef = FA5F6CEA2C67ACEB00D54F3D /* loadingfile.json */; };
+		FA822F562C67B50500A6B376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA822F552C67B50500A6B376 /* AppDelegate.swift */; };
+		FAB0B64C2C67B606009A1349 /* PopularMovies in Frameworks */ = {isa = PBXBuildFile; productRef = FAB0B64B2C67B606009A1349 /* PopularMovies */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		FA5F6CD62C67AC8E00D54F3D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FA5F6CD72C67ACB500D54F3D /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		FA5F6CEA2C67ACEB00D54F3D /* loadingfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loadingfile.json; sourceTree = "<group>"; };
+		FA822F552C67B50500A6B376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA97B8692C67B0E60098EB51 /* FeaturesKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeaturesKit; path = ../FeaturesKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 				FA5F6CE72C67ACCD00D54F3D /* UIUtilities in Frameworks */,
 				FA5F6CDF2C67ACCD00D54F3D /* NetworkLayer in Frameworks */,
 				FA5F6CDD2C67ACCD00D54F3D /* DesignerSystem in Frameworks */,
+				FAB0B64C2C67B606009A1349 /* PopularMovies in Frameworks */,
 				FA5F6CE92C67ACCD00D54F3D /* Utilities in Frameworks */,
 				FA5F6CDB2C67ACCD00D54F3D /* AppConfiguration in Frameworks */,
 				FA5F6CE12C67ACCD00D54F3D /* Router in Frameworks */,
@@ -61,6 +66,7 @@
 		FA5F6C8D2C679FAD00D54F3D = {
 			isa = PBXGroup;
 			children = (
+				FA97B8692C67B0E60098EB51 /* FeaturesKit */,
 				FA5F6CCC2C67AB6C00D54F3D /* CoreKit */,
 				FA5F6C982C679FAD00D54F3D /* Movies */,
 				FA5F6C972C679FAD00D54F3D /* Products */,
@@ -79,10 +85,10 @@
 		FA5F6C982C679FAD00D54F3D /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				FA822F542C67B4FA00A6B376 /* Main */,
 				FA5F6CCF2C67AC7400D54F3D /* Core */,
 				FA5F6CCE2C67AC6D00D54F3D /* Resouces */,
 				FA5F6CCD2C67ABF600D54F3D /* Info.plist */,
-				FA5F6C992C679FAD00D54F3D /* MoviesApp.swift */,
 				FA5F6C9B2C679FAD00D54F3D /* ContentView.swift */,
 				FA5F6C9D2C679FAE00D54F3D /* Assets.xcassets */,
 				FA5F6C9F2C679FAE00D54F3D /* Movies.entitlements */,
@@ -131,6 +137,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA822F542C67B4FA00A6B376 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F6C992C679FAD00D54F3D /* MoviesApp.swift */,
+				FA822F552C67B50500A6B376 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +171,7 @@
 				FA5F6CE42C67ACCD00D54F3D /* SharedModels */,
 				FA5F6CE62C67ACCD00D54F3D /* UIUtilities */,
 				FA5F6CE82C67ACCD00D54F3D /* Utilities */,
+				FAB0B64B2C67B606009A1349 /* PopularMovies */,
 			);
 			productName = Movies;
 			productReference = FA5F6C962C679FAD00D54F3D /* Movies.app */;
@@ -214,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA822F562C67B50500A6B376 /* AppDelegate.swift in Sources */,
 				FA5F6CD82C67ACB500D54F3D /* World.swift in Sources */,
 				FA5F6C9C2C679FAD00D54F3D /* ContentView.swift in Sources */,
 				FA5F6C9A2C679FAD00D54F3D /* MoviesApp.swift in Sources */,
@@ -478,6 +495,10 @@
 		FA5F6CE82C67ACCD00D54F3D /* Utilities */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Utilities;
+		};
+		FAB0B64B2C67B606009A1349 /* PopularMovies */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PopularMovies;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

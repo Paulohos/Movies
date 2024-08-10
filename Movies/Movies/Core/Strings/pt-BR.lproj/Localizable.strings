@@ -4,3 +4,6 @@
 
 "tryAgain" = "Tentar novamente";
 "popular" = "Popular";
+
+"movie.detail.watch" = "Assistir filme";
+"movie.detail.trailer" = "Trailer";

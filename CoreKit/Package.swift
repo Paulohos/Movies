@@ -79,6 +79,10 @@ let package = Package(
         // MARK: - Tests
         .testTarget(
             name: "NetworkLayerTests",
-            dependencies:  ["NetworkLayer", "AppConfiguration", "SharedModels"])
+            dependencies:  ["NetworkLayer", "AppConfiguration", "SharedModels"]),
+        .testTarget(
+            name: "UtilitiesTests",
+            dependencies:  ["Utilities"])
+
     ]
 )

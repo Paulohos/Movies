@@ -16,6 +16,15 @@ public enum L10n {
         public static let tryAgain = L10n.tr("Localizable", "tryAgain")
         /// Popular
         public static let popular = L10n.tr("Localizable", "popular")
+
+        public enum Movie {
+            public enum Detail {
+                /// Watch movie
+                public static let watch = L10n.tr("Localizable", "movie.detail.watch")
+                /// Trailer
+                public static let trailer = L10n.tr("Localizable", "movie.detail.trailer")
+            }
+        }
     }
 }
 
