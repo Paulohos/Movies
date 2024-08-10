@@ -1,0 +1,6 @@
+// MARK: - Default Error Messges
+"messageError.default.title" = "Oops... Algo deu errado";
+"messageError.default.message" = "Estamos passando por instabilidades, por favor, tente mais tarde.";
+
+"tryAgain" = "Tentar novamente";
+"popular" = "Popular";

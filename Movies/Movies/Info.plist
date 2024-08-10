@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnviromentSetting</key>
+	<dict>
+		<key>accessToken</key>
+		<string>eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZjY5MjU2NDg0ZGMzYWY4ZmZkZjJjMjNmMjViOGFkNiIsIm5iZiI6MTcyMzE0NzYyMS4yMzI0NzEsInN1YiI6IjY2YjUyM2FjNDJkNGE5NTM0ZGQ2MzJmNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.61_LEHUfe8UmwIioFmMDZmFacmi1d9L6LbQ73ggo6ok</string>
+		<key>apiKey</key>
+		<string>af69256484dc3af8ffdf2c23f25b8ad6</string>
+		<key>bannerUrl</key>
+		<string>https://image.tmdb.org/t/p</string>
+		<key>baseURL</key>
+		<string>https://api.themoviedb.org</string>
+		<key>bundleId</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	</dict>
+</dict>
+</plist>
